@@ -1,2589 +1,1837 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Md. Nazmus Sakib | Crop Stress Physiology Researcher</title>
-
-    <meta name="description"
-          content="Academic portfolio of Md. Nazmus Sakib, MSc student in Agronomy and Graduate Research Assistant at Sher-e-Bangla Agricultural University.">
-
-    <meta name="keywords"
-          content="Md Nazmus Sakib, Agronomy, Crop Stress Physiology, Agriculture, Sher-e-Bangla Agricultural University, Plant Stress, Researcher">
-
-    <meta name="author" content="Md. Nazmus Sakib">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
-          rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-
-        /* =========================================================
-           GLOBAL
-        ========================================================= */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --green: #1f6f4a;
-            --dark-green: #174f36;
-            --light-green: #edf6f1;
-            --text: #263238;
-            --muted: #667085;
-            --border: #e5e7eb;
-            --white: #ffffff;
-            --background: #fafafa;
-            --navy: #17202a;
-        }
-
-        body {
-            font-family: "Inter", sans-serif;
-            color: var(--text);
-            background: var(--background);
-            line-height: 1.7;
-        }
-
-        h1, h2, h3, h4 {
-            font-family: "Libre Baskerville", serif;
-            color: var(--navy);
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(1120px, 92%);
-            margin: auto;
-        }
-
-        section {
-            padding: 85px 0;
-            scroll-margin-top: 75px;
-        }
-
-        .section-title {
-            font-size: 31px;
-            margin-bottom: 12px;
-        }
-
-        .section-line {
-            width: 55px;
-            height: 3px;
-            background: var(--green);
-            margin-bottom: 35px;
-        }
-
-        .section-intro {
-            color: var(--muted);
-            max-width: 850px;
-            margin-bottom: 40px;
-        }
-
-        /* =========================================================
-           NAVBAR
-        ========================================================= */
-
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            background: rgba(255,255,255,0.96);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .navbar {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .brand {
-            font-family: "Libre Baskerville", serif;
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--dark-green);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 27px;
-            align-items: center;
-            list-style: none;
-        }
-
-        .nav-links a {
-            font-size: 14px;
-            font-weight: 600;
-            color: #4b5563;
-            transition: 0.25s;
-        }
-
-        .nav-links a:hover {
-            color: var(--green);
-        }
-
-        .menu-btn {
-            display: none;
-            border: none;
-            background: transparent;
-            font-size: 24px;
-            cursor: pointer;
-            color: var(--navy);
-        }
-
-        /* =========================================================
-           HERO
-        ========================================================= */
-
-        .hero {
-            background: var(--white);
-            padding: 90px 0 80px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.55fr 0.75fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .eyebrow {
-            color: var(--green);
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1.2px;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 {
-            font-size: clamp(38px, 5vw, 60px);
-            line-height: 1.15;
-            margin-bottom: 17px;
-        }
-
-        .hero h2 {
-            font-family: "Inter", sans-serif;
-            font-size: 21px;
-            font-weight: 600;
-            color: #455a64;
-            margin-bottom: 20px;
-        }
-
-        .hero-description {
-            max-width: 720px;
-            color: #59636e;
-            font-size: 16px;
-            margin-bottom: 25px;
-        }
-
-        .hero-meta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px 25px;
-            margin-bottom: 30px;
-            color: #59636e;
-            font-size: 14px;
-        }
-
-        .hero-meta span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .hero-meta i {
-            color: var(--green);
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 9px;
-            padding: 11px 18px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 600;
-            transition: 0.25s;
-        }
-
-        .btn-primary {
-            background: var(--green);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: var(--dark-green);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            border: 1px solid #cbd5d1;
-            color: var(--dark-green);
-            background: white;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--green);
-            background: var(--light-green);
-        }
-
-        /* PROFILE PHOTO */
-
-        .profile-wrapper {
-            display: flex;
-            justify-content: center;
-        }
-
-        .profile-photo {
-            width: 300px;
-            height: 350px;
-            object-fit: cover;
-            object-position: center top;
-            border-radius: 10px;
-            border: 1px solid #dfe5e1;
-            box-shadow: 0 18px 45px rgba(20, 70, 45, 0.14);
-            background: #fff;
-        }
-
-        /* =========================================================
-           ABOUT
-        ========================================================= */
-
-        .about {
-            background: white;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 0.8fr;
-            gap: 60px;
-        }
-
-        .about-text p {
-            margin-bottom: 18px;
-            color: #56616b;
-        }
-
-        .quick-facts {
-            background: var(--light-green);
-            padding: 28px;
-            border-radius: 8px;
-            border-left: 4px solid var(--green);
-            height: fit-content;
-        }
-
-        .quick-facts h3 {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .fact {
-            padding: 13px 0;
-            border-bottom: 1px solid rgba(31,111,74,0.13);
-        }
-
-        .fact:last-child {
-            border-bottom: none;
-        }
-
-        .fact strong {
-            display: block;
-            font-size: 13px;
-            color: var(--green);
-            text-transform: uppercase;
-            letter-spacing: .5px;
-            margin-bottom: 3px;
-        }
-
-        .fact span {
-            font-size: 14px;
-            color: #455a64;
-        }
-
-        /* =========================================================
-           RESEARCH
-        ========================================================= */
-
-        .research {
-            background: #f7faf8;
-        }
-
-        .research-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .research-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 27px;
-            transition: 0.25s;
-        }
-
-        .research-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(0,0,0,.07);
-            border-color: #cbded3;
-        }
-
-        .research-card i {
-            color: var(--green);
-            font-size: 27px;
-            margin-bottom: 17px;
-        }
-
-        .research-card h3 {
-            font-size: 19px;
-            margin-bottom: 9px;
-        }
-
-        .research-card p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .interest-tags {
-            margin-top: 35px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: white;
-            border: 1px solid #dce5df;
-            color: var(--dark-green);
-            padding: 7px 13px;
-            border-radius: 30px;
-            font-size: 13px;
-        }
-
-        /* =========================================================
-           TIMELINE
-        ========================================================= */
-
-        .timeline {
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .timeline::before {
-            content: "";
-            position: absolute;
-            left: 10px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #dbe5df;
-        }
-
-        .timeline-item {
-            position: relative;
-            padding-left: 45px;
-            margin-bottom: 48px;
-        }
-
-        .timeline-dot {
-            position: absolute;
-            left: 2px;
-            top: 7px;
-            width: 18px;
-            height: 18px;
-            border-radius: 50%;
-            background: var(--green);
-            border: 4px solid white;
-            box-shadow: 0 0 0 1px #b9d0c4;
-        }
-
-        .timeline-date {
-            color: var(--green);
-            font-size: 13px;
-            font-weight: 700;
-            margin-bottom: 5px;
-        }
-
-        .timeline-item h3 {
-            font-size: 21px;
-            margin-bottom: 5px;
-        }
-
-        .timeline-place {
-            color: #667085;
-            font-weight: 600;
-            font-size: 14px;
-            margin-bottom: 12px;
-        }
-
-        .timeline-item p {
-            color: #59636e;
-            font-size: 15px;
-        }
-
-        .timeline-item ul {
-            padding-left: 20px;
-            color: #59636e;
-        }
-
-        .timeline-item li {
-            margin-bottom: 7px;
-        }
-
-        /* =========================================================
-           EDUCATION
-        ========================================================= */
-
-        .education-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 28px;
-            margin-bottom: 20px;
-        }
-
-        .education-top {
-            display: flex;
-            justify-content: space-between;
-            gap: 25px;
-            align-items: flex-start;
-        }
-
-        .education-card h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-
-        .institution {
-            color: var(--green);
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .education-date {
-            color: #777;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-
-        .education-details {
-            margin-top: 17px;
-            color: #59636e;
-            font-size: 14px;
-        }
-
-        .education-details strong {
-            color: var(--navy);
-        }
-
-        .academic-stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .stat {
-            background: var(--light-green);
-            padding: 8px 13px;
-            border-radius: 5px;
-            color: var(--dark-green);
-            font-size: 13px;
-            font-weight: 600;
-        }
-
-        /* =========================================================
-           PUBLICATIONS
-        ========================================================= */
-
-        .publications {
-            background: #f7faf8;
-        }
-
-        .publication {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 27px;
-            margin-bottom: 18px;
-        }
-
-        .publication-type {
-            display: inline-block;
-            color: var(--green);
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: .8px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .publication h3 {
-            font-family: "Inter", sans-serif;
-            font-size: 17px;
-            line-height: 1.5;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .publication p {
-            color: #68737d;
-            font-size: 14px;
-        }
-
-        .doi {
-            display: inline-flex;
-            margin-top: 12px;
-            color: var(--green);
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .doi:hover {
-            text-decoration: underline;
-        }
-
-        /* =========================================================
-           TRAINING
-        ========================================================= */
-
-        .training-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-        }
-
-        .training-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 24px;
-        }
-
-        .training-card h3 {
-            font-size: 18px;
-            margin-bottom: 7px;
-        }
-
-        .training-card .date {
-            font-size: 12px;
-            color: var(--green);
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .training-card p {
-            color: #667085;
-            font-size: 14px;
-        }
-
-        /* =========================================================
-           SKILLS
-        ========================================================= */
-
-        .skills {
-            background: #f7faf8;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .skill-box {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 25px;
-        }
-
-        .skill-box h3 {
-            font-size: 17px;
-            margin-bottom: 14px;
-        }
-
-        .skill-box ul {
-            list-style: none;
-        }
-
-        .skill-box li {
-            color: #667085;
-            padding: 6px 0;
-            border-bottom: 1px dashed #e4e7e5;
-            font-size: 14px;
-        }
-
-        .skill-box li:last-child {
-            border-bottom: none;
-        }
-
-        /* =========================================================
-           CONFERENCES & ACTIVITIES
-        ========================================================= */
-
-        .activity-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .activity-card {
-            background: white;
-            border: 1px solid var(--border);
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .activity-card i {
-            color: var(--green);
-            font-size: 23px;
-            margin-bottom: 12px;
-        }
-
-        .activity-card h3 {
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        .activity-card p {
-            color: #667085;
-            font-size: 14px;
-        }
-
-        /* =========================================================
-           ACHIEVEMENTS
-        ========================================================= */
-
-        .achievements {
-            background: #f7faf8;
-        }
-
-        .achievement-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .achievement-card {
-            background: white;
-            padding: 25px;
-            border: 1px solid var(--border);
-            border-radius: 8px;
-        }
-
-        .achievement-card i {
-            color: #c59622;
-            font-size: 27px;
-            margin-bottom: 13px;
-        }
-
-        .achievement-card h3 {
-            font-size: 17px;
-            margin-bottom: 8px;
-        }
-
-        .achievement-card p {
-            color: #667085;
-            font-size: 14px;
-        }
-
-        /* =========================================================
-           CERTIFICATES
-        ========================================================= */
-
-        .certificates {
-            background: white;
-        }
-
-        .certificate-list {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-
-        .certificate-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 18px;
-            border: 1px solid var(--border);
-            border-radius: 7px;
-            background: #fff;
-        }
-
-        .certificate-icon {
-            width: 43px;
-            height: 43px;
-            border-radius: 50%;
-            background: var(--light-green);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--green);
-            flex-shrink: 0;
-        }
-
-        .certificate-item h4 {
-            font-family: "Inter", sans-serif;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-
-        .certificate-item p {
-            color: #77808a;
-            font-size: 12px;
-        }
-
-        /* =========================================================
-           CONTACT
-        ========================================================= */
-
-        .contact {
-            background: var(--navy);
-            color: white;
-        }
-
-        .contact .section-title {
-            color: white;
-        }
-
-        .contact .section-line {
-            background: #75b995;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 1fr;
-            gap: 70px;
-        }
-
-        .contact-text p {
-            color: #c8d0d5;
-            margin-bottom: 20px;
-        }
-
-        .contact-links {
-            display: grid;
-            gap: 14px;
-        }
-
-        .contact-link {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            color: #e5eaed;
-            font-size: 14px;
-        }
-
-        .contact-link i {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background: rgba(255,255,255,.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #83c19f;
-        }
-
-        .social-links {
-            margin-top: 25px;
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid rgba(255,255,255,.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: .25s;
-        }
-
-        .social-links a:hover {
-            background: var(--green);
-            border-color: var(--green);
-        }
-
-        /* =========================================================
-           FOOTER
-        ========================================================= */
-
-        footer {
-            background: #10171c;
-            color: #9ca6ad;
-            text-align: center;
-            padding: 22px;
-            font-size: 13px;
-        }
-
-        /* =========================================================
-           RESPONSIVE
-        ========================================================= */
-
-        @media (max-width: 900px) {
-
-            .hero-grid,
-            .about-grid,
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero {
-                text-align: center;
-            }
-
-            .hero-description {
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-meta,
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .profile-wrapper {
-                order: -1;
-            }
-
-            .research-grid,
-            .skills-grid,
-            .achievement-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 700px) {
-
-            section {
-                padding: 65px 0;
-            }
-
-            .nav-links {
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                display: none;
-                flex-direction: column;
-                background: white;
-                border-bottom: 1px solid var(--border);
-                padding: 20px;
-                gap: 18px;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-btn {
-                display: block;
-            }
-
-            .research-grid,
-            .training-grid,
-            .skills-grid,
-            .activity-grid,
-            .achievement-grid,
-            .certificate-list {
-                grid-template-columns: 1fr;
-            }
-
-            .education-top {
-                flex-direction: column;
-                gap: 5px;
-            }
-
-            .profile-photo {
-                width: 250px;
-                height: 295px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Md. Nazmus Sakib | Crop Stress Physiology Researcher</title>
+
+<meta name="description" content="Academic profile of Md. Nazmus Sakib, MSc student and Graduate Research Assistant in Agronomy at Sher-e-Bangla Agricultural University.">
+
+<style>
+:root {
+    --primary: #123b2a;
+    --secondary: #1f6b4d;
+    --accent: #d9a441;
+    --light: #f5f7f6;
+    --dark: #202623;
+    --border: #dfe5e1;
+    --white: #ffffff;
+    --text: #424a46;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.7;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.nav-container {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 25px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #39433f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #f3f7f4 0%, #ffffff 70%);
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.profile-image {
+    width: 245px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #d5ddd8;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.hero h2 {
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.hero-affiliation {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.hero-description {
+    max-width: 760px;
+    font-size: 16px;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0;
+}
+
+.tag {
+    background: #e8f0eb;
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: white;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+section:nth-child(even) {
+    background: #fafbfa;
+}
+
+.section-title {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.section-line {
+    width: 55px;
+    height: 3px;
+    background: var(--accent);
+    margin-bottom: 30px;
+}
+
+.section-intro {
+    max-width: 850px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.about-box h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   RESEARCH
+========================= */
+
+.research-box {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 30px;
+    border-left: 4px solid var(--secondary);
+}
+
+.research-box h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.research-list {
+    margin-left: 20px;
+}
+
+.research-list li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.education-card {
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.education-card summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 22px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.education-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.degree-summary {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.degree-icon {
+    width: 45px;
+    height: 45px;
+    background: #eaf1ed;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.degree-content h3 {
+    color: var(--primary);
+    font-size: 19px;
+}
+
+.degree-content p {
+    font-size: 14px;
+    color: #68736d;
+}
+
+.view-label {
+    font-size: 13px;
+    color: var(--secondary);
+    white-space: nowrap;
+}
+
+.education-detail {
+    padding: 0 30px 30px;
+    border-top: 1px solid var(--border);
+}
+
+.education-detail h4 {
+    color: var(--primary);
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.education-detail ul {
+    margin-left: 22px;
+}
+
+.education-detail li {
+    margin-bottom: 5px;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.info-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #edf0ee;
+    vertical-align: top;
+}
+
+.info-table td:first-child {
+    width: 220px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+/* =========================
+   RESEARCH EXPERIENCE
+========================= */
+
+.experience-card {
+    border-left: 3px solid var(--secondary);
+    padding: 5px 0 5px 25px;
+    margin-bottom: 35px;
+}
+
+.experience-card h3 {
+    color: var(--primary);
+    font-size: 21px;
+}
+
+.experience-card .date {
+    color: var(--secondary);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.experience-card ul {
+    margin-left: 20px;
+}
+
+/* =========================
+   PUBLICATIONS
+========================= */
+
+.publication {
+    padding: 22px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.publication:last-child {
+    border-bottom: none;
+}
+
+.publication-number {
+    font-weight: 700;
+    color: var(--secondary);
+}
+
+.publication a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   TRAINING / SKILLS
+========================= */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 25px;
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.card ul {
+    margin-left: 20px;
+}
+
+/* =========================
+   ACHIEVEMENTS
+========================= */
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.achievement {
+    border: 1px solid var(--border);
+    padding: 20px;
+    background: white;
+}
+
+.achievement h3 {
+    color: var(--primary);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   CONFERENCES
+========================= */
+
+.conference {
+    padding: 20px;
+    background: white;
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+}
+
+.conference h3 {
+    color: var(--primary);
+}
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+.certificate-box {
+    background: #f5f8f6;
+    padding: 35px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.certificate-box h3 {
+    font-family: Georgia, serif;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.certificate-box a {
+    display: inline-block;
+    margin-top: 18px;
+    background: var(--primary);
+    color: white;
+    padding: 11px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contact-item {
+    padding: 20px;
+    border: 1px solid var(--border);
+    background: white;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    color: var(--secondary);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--primary);
+    color: #dce7e1;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .research-tags,
+    .buttons {
+        justify-content: center;
+    }
+
+    .about-grid,
+    .grid-2,
+    .achievement-list,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .degree-summary {
+        align-items: flex-start;
+    }
+
+    .view-label {
+        display: none;
+    }
+}
+</style>
 </head>
-
 
 <body>
 
-<!-- =========================================================
+<!-- =========================
      NAVIGATION
-========================================================= -->
+========================= -->
 
-<header>
+<nav>
+<div class="nav-container">
 
-    <div class="container navbar">
+<div class="logo">Md. Nazmus Sakib</div>
 
-        <a href="#home" class="brand">
-            Md. Nazmus Sakib
-        </a>
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#publications">Publications</a></li>
+<li><a href="#training">Training</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-        <button class="menu-btn" id="menuBtn">
-            <i class="fas fa-bars"></i>
-        </button>
+</div>
+</nav>
 
-        <ul class="nav-links" id="navLinks">
 
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#training">Training</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#contact">Contact</a></li>
+<!-- =========================
+     HERO
+========================= -->
 
-        </ul>
+<header class="hero">
 
-    </div>
+<div class="hero-container">
 
+<div>
+<img src="./profile.jpg"
+     alt="Md. Nazmus Sakib"
+     class="profile-image">
+</div>
+
+<div>
+
+<h1>Md. Nazmus Sakib</h1>
+
+<h2>Crop Stress Physiology Researcher</h2>
+
+<p class="hero-affiliation">
+MSc Student in Agronomy &nbsp;|&nbsp;
+Graduate Research Assistant
+</p>
+
+<p class="hero-description">
+Sher-e-Bangla Agricultural University, Dhaka, Bangladesh
+</p>
+
+<div class="research-tags">
+<span class="tag">Agronomy</span>
+<span class="tag">Crop Science</span>
+<span class="tag">Plant Stress Physiology</span>
+<span class="tag">Climate Smart Agriculture</span>
+<span class="tag">Sustainable Agriculture</span>
+</div>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+   href="#research">
+Research Interests
+</a>
+
+<a class="btn btn-outline"
+   href="./certificates.pdf"
+   target="_blank">
+Certificates
+</a>
+
+</div>
+
+</div>
+
+</div>
 </header>
 
 
-<!-- =========================================================
-     HERO
-========================================================= -->
-
-<section class="hero" id="home">
-
-    <div class="container hero-grid">
-
-        <div>
-
-            <div class="eyebrow">
-                Crop Stress Physiology Researcher
-            </div>
-
-            <h1>
-                Md. Nazmus Sakib
-            </h1>
-
-            <h2>
-                MSc Student in Agronomy · Graduate Research Assistant
-            </h2>
-
-            <p class="hero-description">
-
-                Working on crop stress physiology, climate-smart agriculture
-                and sustainable crop production, with a particular interest
-                in understanding plant responses to complex environmental
-                stresses and developing resilient agricultural systems.
-
-            </p>
-
-            <div class="hero-meta">
-
-                <span>
-                    <i class="fas fa-university"></i>
-                    Sher-e-Bangla Agricultural University
-                </span>
-
-                <span>
-                    <i class="fas fa-location-dot"></i>
-                    Dhaka, Bangladesh
-                </span>
-
-                <span>
-                    <i class="fas fa-flask"></i>
-                    Plant Stress Physiology
-                </span>
-
-            </div>
-
-            <div class="hero-buttons">
-
-                <a href="#research" class="btn btn-primary">
-                    <i class="fas fa-flask"></i>
-                    Explore Research
-                </a>
-
-                <a href="#publications" class="btn btn-outline">
-                    <i class="fas fa-book-open"></i>
-                    Publications
-                </a>
-
-                <a href="certificates.pdf"
-                   target="_blank"
-                   class="btn btn-outline">
-
-                    <i class="fas fa-certificate"></i>
-                    Certificates
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="profile-wrapper">
-
-            <!--
-                IMPORTANT:
-                Upload your photograph to GitHub with the filename:
-
-                profile.jpg
-            -->
-
-            <img src="profile.jpg"
-                 alt="Md. Nazmus Sakib"
-                 class="profile-photo">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
+<!-- =========================
      ABOUT
-========================================================= -->
+========================= -->
 
-<section class="about" id="about">
+<section id="about">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            About
-        </h2>
+<h2 class="section-title">About</h2>
+<div class="section-line"></div>
 
-        <div class="section-line"></div>
+<div class="about-grid">
 
+<div class="about-box">
 
-        <div class="about-grid">
+<h3>About Me</h3>
 
-            <div class="about-text">
+<p>
+Hello! This is Md. Nazmus Sakib, a B.Sc. graduate in Agricultural
+Science from Sher-e-Bangla Agricultural University with a strong
+passion for sustainable agriculture and crop production.
+</p>
 
-                <p>
-                    Hello! I am <strong>Md. Nazmus Sakib</strong>,
-                    a B.Sc. graduate in Agricultural Science from
-                    Sher-e-Bangla Agricultural University and currently
-                    pursuing an MSc in Agronomy at the same institution.
-                </p>
+<p>
+I am currently pursuing MSc in Agronomy at the same university.
+My academic journey has been marked by excellence, reflected in
+receiving the Dean’s Award because of obtaining CGPA 3.88/4 in my
+bachelor degree.
+</p>
 
-                <p>
-                    My academic and research interests center on
-                    <strong>crop stress physiology, agronomy and sustainable
-                    agriculture</strong>. I am particularly interested in
-                    understanding how crops respond to environmental stresses
-                    and how physiological, biochemical and agronomic approaches
-                    can contribute to climate-resilient crop production.
-                </p>
+<p>
+Serving as class representative throughout my university years
+allowed me to develop strong leadership, organizational, and
+communication skills.
+</p>
 
-                <p>
-                    My current thesis research focuses on assessing growth
-                    and physiological traits associated with combined
-                    <strong>salinity and waterlogging tolerance in wheat
-                    varieties</strong>, with the goal of identifying
-                    stress-resilient crop genotypes.
-                </p>
+</div>
 
-                <p>
-                    I also have research interests in salinity, drought,
-                    waterlogging, extreme temperatures, soil acidity,
-                    nutritional disorders and biotic stresses. My broader
-                    objective is to contribute to practical and scientifically
-                    sound approaches for improving crop adaptation, resilience,
-                    productivity and food security.
-                </p>
+<div class="about-box">
 
-                <p>
-                    Alongside research, I have developed experience in data
-                    analysis, scientific visualization, reference management,
-                    laboratory techniques, leadership and academic
-                    communication.
-                </p>
+<h3>Research Vision</h3>
 
-            </div>
+<p>
+I am particularly interested in exploring molecular biology and
+crop stress physiology to enhance crop yield, improve resilience,
+and develop innovative solutions for sustainable agriculture.
+</p>
 
+<p>
+My goal is to translate scientific knowledge into practical
+solutions that support national development, improve food security,
+and promote environmentally responsible farming practices.
+</p>
 
-            <div class="quick-facts">
+<p>
+I am eager to connect with fellow researchers, professionals,
+and organizations in agriculture and life sciences.
+</p>
 
-                <h3>
-                    At a Glance
-                </h3>
+</div>
 
-                <div class="fact">
-                    <strong>Current Role</strong>
-                    <span>Graduate Research Assistant</span>
-                </div>
+</div>
 
-                <div class="fact">
-                    <strong>Degree</strong>
-                    <span>MSc in Agronomy</span>
-                </div>
-
-                <div class="fact">
-                    <strong>Institution</strong>
-                    <span>Sher-e-Bangla Agricultural University</span>
-                </div>
-
-                <div class="fact">
-                    <strong>Research Focus</strong>
-                    <span>Crop Stress Physiology</span>
-                </div>
-
-                <div class="fact">
-                    <strong>Academic CGPA</strong>
-                    <span>3.88 / 4.00</span>
-                </div>
-
-                <div class="fact">
-                    <strong>Undergraduate Merit</strong>
-                    <span>12th out of 380 students</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      RESEARCH
-========================================================= -->
+========================= -->
 
-<section class="research" id="research">
+<section id="research">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Research Interests
-        </h2>
+<h2 class="section-title">Research Interests</h2>
+<div class="section-line"></div>
 
-        <div class="section-line"></div>
+<div class="research-box">
 
-        <p class="section-intro">
+<h3>Primary Research Interests</h3>
 
-            My research aims to understand plant adaptive responses to
-            environmental stresses and develop holistic approaches for
-            improving crop productivity, resilience and sustainability.
+<p>
+Agronomy, Crop Science, Plant Stress Physiology
+</p>
 
-        </p>
+<br>
 
+<p>
+I am aiming at developing new holistic approaches to enhance crop
+production under stressful environmental conditions.
+</p>
 
-        <div class="research-grid">
+<br>
 
-            <div class="research-card">
+<ul class="research-list">
 
-                <i class="fas fa-seedling"></i>
+<li>Salinity stress</li>
+<li>Extreme temperatures</li>
+<li>Soil acidity</li>
+<li>Drought</li>
+<li>Waterlogging</li>
+<li>Nutritional disorders</li>
+<li>Biotic stresses</li>
 
-                <h3>
-                    Crop Stress Physiology
-                </h3>
+</ul>
 
-                <p>
-                    Investigating physiological responses and adaptive
-                    mechanisms of crops under environmental stresses.
-                </p>
+<br>
 
-            </div>
+<p>
+The ultimate goal of my research is to develop novel strategies
+and assist breeders in developing germplasm to enhance crop
+adaptability and resilience under stressful environmental conditions
+and improve crop yield to achieve agricultural sustainability.
+</p>
 
+</div>
 
-            <div class="research-card">
-
-                <i class="fas fa-temperature-high"></i>
-
-                <h3>
-                    Abiotic Stress
-                </h3>
-
-                <p>
-                    Salinity, drought, waterlogging, extreme temperatures,
-                    soil acidity and nutritional disorders.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <i class="fas fa-leaf"></i>
-
-                <h3>
-                    Sustainable Crop Production
-                </h3>
-
-                <p>
-                    Developing agronomic strategies for resilient,
-                    productive and environmentally responsible agriculture.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <i class="fas fa-dna"></i>
-
-                <h3>
-                    Molecular Biology
-                </h3>
-
-                <p>
-                    Exploring molecular and biochemical mechanisms underlying
-                    plant stress responses and adaptation.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <i class="fas fa-microscope"></i>
-
-                <h3>
-                    Plant–Environment Interaction
-                </h3>
-
-                <p>
-                    Understanding interactions among plants, soil,
-                    environmental conditions and crop performance.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <i class="fas fa-cloud-sun"></i>
-
-                <h3>
-                    Climate-Smart Agriculture
-                </h3>
-
-                <p>
-                    Research approaches aimed at strengthening agricultural
-                    resilience under changing climatic conditions.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="interest-tags">
-
-            <span class="tag">Agronomy</span>
-            <span class="tag">Crop Science</span>
-            <span class="tag">Plant Stress Physiology</span>
-            <span class="tag">Salinity Stress</span>
-            <span class="tag">Waterlogging</span>
-            <span class="tag">Drought</span>
-            <span class="tag">Soil Science</span>
-            <span class="tag">Plant–Soil Interaction</span>
-            <span class="tag">Plant Nutrition</span>
-            <span class="tag">Sustainable Agriculture</span>
-            <span class="tag">Climate-Smart Agriculture</span>
-            <span class="tag">Food Security</span>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      EDUCATION
-========================================================= -->
+========================= -->
 
 <section id="education">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Education
-        </h2>
+<h2 class="section-title">Education</h2>
+<div class="section-line"></div>
 
-        <div class="section-line"></div>
+<p class="section-intro">
+Click on each degree to view the complete academic information.
+</p>
 
+<div class="education-list">
 
-        <div class="education-card">
 
-            <div class="education-top">
+<!-- MS -->
 
-                <div>
+<details class="education-card" open>
 
-                    <h3>
-                        Master of Science (MSc) in Agronomy
-                    </h3>
+<summary>
 
-                    <div class="institution">
-                        Sher-e-Bangla Agricultural University
-                    </div>
+<div class="degree-summary">
 
-                </div>
+<div class="degree-icon">MS</div>
 
-                <div class="education-date">
-                    July 2025 – Present
-                </div>
+<div class="degree-content">
 
-            </div>
+<h3>Master of Science (MS) in Agronomy</h3>
 
+<p>
+Sher-e-Bangla Agricultural University
+&nbsp; | &nbsp;
+July 1, 2025 – Present
+</p>
 
-            <div class="education-details">
+</div>
 
-                <p>
-                    <strong>Research Focus:</strong>
-                    Plant Stress Physiology
-                </p>
+</div>
 
-                <p>
-                    <strong>Ongoing Thesis:</strong>
-                    “Assessing growth and physiological traits associated
-                    with combined salinity and waterlogging tolerance in
-                    wheat varieties”
-                </p>
+<span class="view-label">
+View Details
+</span>
 
-                <div class="academic-stats">
+</summary>
 
-                    <span class="stat">
-                        Crop Stress Physiology
-                    </span>
 
-                    <span class="stat">
-                        Agronomy
-                    </span>
+<div class="education-detail">
 
-                    <span class="stat">
-                        Stress-resilient Crops
-                    </span>
+<h4>Institution</h4>
 
-                </div>
+<p>
+Sher-e-Bangla Agricultural University
+</p>
 
-            </div>
+<h4>Thesis</h4>
 
-        </div>
+<p>
+<strong>
+“Assessing growth and physiological traits associated with combined
+salinity and waterlogging tolerance in wheat varieties”
+</strong>
+</p>
 
+<h4>Research Focus</h4>
 
-        <div class="education-card">
+<p>
+Plant Stress Physiology
+</p>
 
-            <div class="education-top">
+<h4>Courses Completed — 1st Semester</h4>
 
-                <div>
+<ul>
 
-                    <h3>
-                        Bachelor of Science in Agriculture (Hons.)
-                    </h3>
+<li>Advanced Crop Production Technology</li>
+<li>Principles of Seed Technology</li>
+<li>Crop Physiology and Stress Agronomy</li>
+<li>Fertilizer Management</li>
+<li>Post Harvest Technology</li>
 
-                    <div class="institution">
-                        Sher-e-Bangla Agricultural University
-                    </div>
+</ul>
 
-                </div>
+<h4>Courses Completed — 2nd Semester</h4>
 
-                <div class="education-date">
-                    January 2020 – December 2023
-                </div>
+<ul>
 
-            </div>
+<li>Sustainable Agriculture and Organic Farming</li>
+<li>Applied Weed Science</li>
+<li>Farming System</li>
+<li>Irrigation Water Management</li>
+<li>Agronomic Research</li>
 
+</ul>
 
-            <div class="education-details">
+</div>
 
-                <div class="academic-stats">
+</details>
 
-                    <span class="stat">
-                        CGPA: 3.88 / 4.00
-                    </span>
 
-                    <span class="stat">
-                        182 Credits
-                    </span>
+<!-- BSc -->
 
-                    <span class="stat">
-                        Merit Position: 12 / 380
-                    </span>
+<details class="education-card">
 
-                    <span class="stat">
-                        Dean's Award
-                    </span>
+<summary>
 
-                </div>
+<div class="degree-summary">
 
-            </div>
+<div class="degree-icon">BSc</div>
 
-        </div>
+<div class="degree-content">
 
+<h3>Bachelor of Science in Agriculture (Hons.)</h3>
 
-        <div class="education-card">
+<p>
+Sher-e-Bangla Agricultural University
+&nbsp; | &nbsp;
+January 1, 2020 – December 31, 2023
+</p>
 
-            <div class="education-top">
+</div>
 
-                <div>
+</div>
 
-                    <h3>
-                        Higher Secondary Certificate (HSC)
-                    </h3>
+<span class="view-label">
+View Details
+</span>
 
-                    <div class="institution">
-                        Notre Dame College, Dhaka
-                    </div>
+</summary>
 
-                </div>
 
-                <div class="education-date">
-                    2017 – 2019
-                </div>
+<div class="education-detail">
 
-            </div>
+<table class="info-table">
 
-            <div class="education-details">
+<tr>
+<td>University</td>
+<td>Sher-e-Bangla Agricultural University</td>
+</tr>
 
-                GPA: <strong>5.00 / 5.00</strong>
+<tr>
+<td>Credits Completed</td>
+<td>182</td>
+</tr>
 
-            </div>
+<tr>
+<td>Merit Position</td>
+<td>12th out of 380 students</td>
+</tr>
 
-        </div>
+<tr>
+<td>Final CGPA</td>
+<td>3.88 out of 4.00</td>
+</tr>
 
+</table>
 
-        <div class="education-card">
 
-            <div class="education-top">
+<h4>Semester-wise CGPA</h4>
 
-                <div>
+<ul>
 
-                    <h3>
-                        Secondary School Certificate (SSC)
-                    </h3>
+<li>Semester 1 — 3.84 / 4.00</li>
+<li>Semester 2 — 3.67 / 4.00</li>
+<li>Semester 3 — 3.89 / 4.00</li>
+<li>Semester 4 — 3.81 / 4.00</li>
+<li>Semester 5 — 3.96 / 4.00</li>
+<li>Semester 6 — 3.93 / 4.00</li>
+<li>Semester 7 — 3.97 / 4.00</li>
+<li>Semester 8 — 4.00 / 4.00</li>
 
-                    <div class="institution">
-                        Shishukunja School and College, Jhenaidah
-                    </div>
+</ul>
 
-                </div>
 
-                <div class="education-date">
-                    2015 – 2017
-                </div>
+<h4>Semester 1 Courses</h4>
 
-            </div>
+<ul>
 
-            <div class="education-details">
+<li>Fundamentals of Agricultural Botany (Theory)</li>
+<li>Plant Morphology and Anatomy (Practical)</li>
+<li>Chemistry of Fertilizer and Radio–Tracer Technique (Theory)</li>
+<li>Elementary Experiments on Agricultural Chemistry (Practical)</li>
+<li>Agricultural Economics (Theory)</li>
+<li>Fundamentals of Agronomy (Theory)</li>
+<li>Fundamentals of Agronomy (Practical)</li>
+<li>Introductory Soil Science (Theory)</li>
+<li>Elementary Soil Experiments (Practical)</li>
+<li>Advanced English Language Skills (Elective)</li>
 
-                GPA: <strong>5.00 / 5.00</strong>
+</ul>
 
-            </div>
 
-        </div>
+<h4>Semester 2 Courses</h4>
 
-    </div>
+<ul>
 
+<li>Agricultural Mechanization (Theory)</li>
+<li>Agricultural Mechanization (Practical)</li>
+<li>Livestock Production (Theory)</li>
+<li>Livestock Production (Practical)</li>
+<li>Chemistry of Biomolecules (Theory)</li>
+<li>Chemistry of Biomolecules (Practical)</li>
+<li>Rural Sociology (Theory)</li>
+<li>Integrated Aquaculture (Elective)</li>
+<li>Introduction to Floriculture and Landscaping (Theory)</li>
+<li>Introduction to Floriculture and Landscaping (Practical)</li>
+
+</ul>
+
+
+<h4>Semester 3 Courses</h4>
+
+<ul>
+
+<li>Agricultural Extension and Rural Development (Theory)</li>
+<li>Agricultural Extension and Rural Development (Practical)</li>
+<li>Sustainable Agriculture (Elective)</li>
+<li>Intermediary Metabolism and Food Nutrition (Theory)</li>
+<li>Intermediary Metabolism and Food Nutrition (Practical)</li>
+<li>Cytology and Cytogenetic (Theory)</li>
+<li>Cytology and Cytogenetic (Practical)</li>
+<li>Vegetable Production (Theory)</li>
+<li>Vegetable Production (Practical)</li>
+<li>Introduction to Plant Pathology and Microbiology (Theory)</li>
+<li>Laboratory Techniques in Plant Pathology and Microbiology (Practical)</li>
+
+</ul>
+
+
+<h4>Semester 4 Courses</h4>
+
+<ul>
+
+<li>Plant Physiology (Theory)</li>
+<li>Plant Physiology (Practical)</li>
+<li>Agroforestry (Theory)</li>
+<li>Agroforestry (Practical)</li>
+<li>Seed Science and Technology (Theory)</li>
+<li>Seed Science and Technology (Practical)</li>
+<li>Introductory Entomology (Theory)</li>
+<li>Introductory Entomology (Practical)</li>
+<li>Soil Classification, Survey and Conservation (Theory)</li>
+<li>Field and Laboratory Study of Soil (Practical)</li>
+<li>Nursery Management of Horticultural Crops (Elective)</li>
+
+</ul>
+
+
+<h4>Semester 5 Courses</h4>
+
+<ul>
+
+<li>Agricultural Statistics (Theory)</li>
+<li>Agricultural Statistics (Practical)</li>
+<li>In Vitro Culture (Theory)</li>
+<li>In Vitro Culture (Practical)</li>
+<li>Systematic Entomology and Insect Ecology (Theory)</li>
+<li>Systematic Entomology and Insect Ecology (Practical)</li>
+<li>Genetics (Theory)</li>
+<li>Genetics (Practical)</li>
+<li>Vegetable Seeds Production and Spices (Theory)</li>
+<li>Vegetable Seeds Production and Spices (Practical)</li>
+
+</ul>
+
+
+<h4>Semester 6 Courses</h4>
+
+<ul>
+
+<li>Soil Physics and Soil Chemistry (Theory)</li>
+<li>Physical and Chemical Analysis of Soils (Practical)</li>
+<li>Weed Science (Theory)</li>
+<li>Weed Science (Practical)</li>
+<li>Principles of Plant Pathology and Seed Pathology (Theory)</li>
+<li>Diagnosis and Management of Field Crop Diseases and Seed Health Test (Practical)</li>
+<li>Extension Communication and Technology Transfer (Theory)</li>
+<li>Extension Communication and Technology Transfer (Practical)</li>
+<li>Agro-Industrial Chemistry (Theory)</li>
+<li>Agricultural Chemistry (Practical)</li>
+
+</ul>
+
+
+<h4>Semester 7 Courses</h4>
+
+<ul>
+
+<li>Plant Ecology (Theory)</li>
+<li>Plant Ecology (Practical)</li>
+<li>Extension Organization and Management (Theory)</li>
+<li>Extension Organization and Management (Practical)</li>
+<li>Crop Production Technology (Theory)</li>
+<li>Crop Production Technology (Practical)</li>
+<li>Soil Fertility and Soil Microbiology (Theory)</li>
+<li>Experiments on Plant Nutrition and Soil Microbiology (Practical)</li>
+
+</ul>
+
+
+<h4>Semester 8 Courses</h4>
+
+<ul>
+
+<li>Farm and Farming System (Theory)</li>
+<li>Farm and Farming System (Practical)</li>
+<li>Pest Management and Economic Entomology (Theory)</li>
+<li>Pest Management and Economic Entomology (Practical)</li>
+<li>Plant Breeding (Theory)</li>
+<li>Plant Breeding (Practical)</li>
+<li>Fruit Production and Orchard Management (Theory)</li>
+<li>Fruit Production and Orchard Management (Practical)</li>
+<li>Diseases of Horticultural Crops and Post Harvest Pathology (Theory)</li>
+<li>Diagnosis and Management of Horticultural and Cash Crops Diseases (Practical)</li>
+
+</ul>
+
+</div>
+
+</details>
+
+
+<!-- HSC -->
+
+<details class="education-card">
+
+<summary>
+
+<div class="degree-summary">
+
+<div class="degree-icon">HSC</div>
+
+<div class="degree-content">
+
+<h3>Higher Secondary School Certificate</h3>
+
+<p>
+Notre Dame College, Dhaka
+&nbsp; | &nbsp;
+July 2017 – June 2019
+</p>
+
+</div>
+
+</div>
+
+<span class="view-label">
+View Details
+</span>
+
+</summary>
+
+
+<div class="education-detail">
+
+<table class="info-table">
+
+<tr>
+<td>Institution</td>
+<td>Notre Dame College, Dhaka – 1000</td>
+</tr>
+
+<tr>
+<td>Grade</td>
+<td>GPA 5.00 out of 5.00</td>
+</tr>
+
+<tr>
+<td>Completion</td>
+<td>2019</td>
+</tr>
+
+<tr>
+<td>Board</td>
+<td>Dhaka Board</td>
+</tr>
+
+<tr>
+<td>Stream</td>
+<td>Science</td>
+</tr>
+
+</table>
+
+<h4>Subjects</h4>
+
+<ul>
+
+<li>Physics</li>
+<li>Chemistry</li>
+<li>Higher Mathematics</li>
+<li>Biology</li>
+<li>ICT</li>
+
+</ul>
+
+<h4>Additional Achievement</h4>
+
+<p>
+Certificate for 100% Perfect Attendance over two years.
+</p>
+
+</div>
+
+</details>
+
+
+<!-- SSC -->
+
+<details class="education-card">
+
+<summary>
+
+<div class="degree-summary">
+
+<div class="degree-icon">SSC</div>
+
+<div class="degree-content">
+
+<h3>Secondary School Certificate</h3>
+
+<p>
+Shishukunja School and College, Jhenaidah
+&nbsp; | &nbsp;
+January 2015 – June 2017
+</p>
+
+</div>
+
+</div>
+
+<span class="view-label">
+View Details
+</span>
+
+</summary>
+
+
+<div class="education-detail">
+
+<table class="info-table">
+
+<tr>
+<td>Institution</td>
+<td>Shishukunja School and College, Jhenaidah</td>
+</tr>
+
+<tr>
+<td>Grade</td>
+<td>GPA 5.00 out of 5.00</td>
+</tr>
+
+<tr>
+<td>Completion</td>
+<td>2017</td>
+</tr>
+
+<tr>
+<td>Board</td>
+<td>Board of Intermediate and Secondary Education, Jashore</td>
+</tr>
+
+<tr>
+<td>Group</td>
+<td>Science</td>
+</tr>
+
+</table>
+
+<h4>Core Subjects</h4>
+
+<ul>
+
+<li>Higher Mathematics</li>
+<li>Physics</li>
+<li>Chemistry</li>
+<li>Biology</li>
+<li>ICT</li>
+<li>Bangla</li>
+<li>English</li>
+
+</ul>
+
+<p style="margin-top:15px;">
+A+ was obtained across the core subjects listed above.
+</p>
+
+</div>
+
+</details>
+
+</div>
+
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      RESEARCH EXPERIENCE
-========================================================= -->
+========================= -->
 
-<section class="research" id="experience">
+<section id="experience">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Research Experience
-        </h2>
-
-        <div class="section-line"></div>
+<h2 class="section-title">Research Experience</h2>
+<div class="section-line"></div>
 
 
-        <div class="timeline">
+<div class="experience-card">
 
-            <div class="timeline-item">
+<h3>Graduate Research Assistant</h3>
 
-                <div class="timeline-dot"></div>
+<div class="date">
+July 1, 2025 – Present
+</div>
 
-                <div class="timeline-date">
-                    July 2025 – Present
-                </div>
+<p>
+<strong>Department of Agronomy</strong><br>
+Sher-e-Bangla Agricultural University<br>
+Supervisor: Professor Md. Hasanuzzaman
+</p>
 
-                <h3>
-                    Graduate Research Assistant
-                </h3>
+<h4 style="margin-top:18px;">
+Key Project
+</h4>
 
-                <div class="timeline-place">
-                    Department of Agronomy · Sher-e-Bangla Agricultural University
-                </div>
+<p>
+<strong>
+“Assessing growth and physiological traits associated with combined
+salinity and waterlogging tolerance in wheat varieties”
+</strong>
+</p>
 
-                <p>
-                    <strong>Supervisor:</strong>
-                    Professor Md. Hasanuzzaman
-                </p>
+<p>
+The project focuses on identifying stress-resilient crop genotypes.
+</p>
 
-                <br>
+<h4 style="margin-top:18px;">
+Other Projects
+</h4>
 
-                <ul>
+<ul>
 
-                    <li>
-                        Conducting thesis research on combined salinity and
-                        waterlogging tolerance in wheat varieties.
-                    </li>
+<li>
+Application of Zeolite, Humic Acid and Fulvic Acid for Improving
+Agronomical, Physiological, Biochemical Traits and Yield of Mustard
+to confer Salinity Stress Tolerance, funded by SAURES, Sher-e-Bangla
+Agricultural University (Ongoing).
+</li>
 
-                    <li>
-                        Investigating physiological bottlenecks, stomatal
-                        conductance, ion homeostasis and oxidative stress
-                        responses.
-                    </li>
+<li>
+Response of Foliar Application of Nano-Urea with Different Level of
+Granular Urea on Growth, Seed Yield, Oil Content, and Quality of
+Mustard and Sunflower, Project ID: SRG-256651, funded by Special
+Allocation Fund of NST (Ongoing).
+</li>
 
-                    <li>
-                        Evaluating stress-tolerant wheat lines using
-                        root–shoot biomass traits and physiological markers.
-                    </li>
+</ul>
 
-                    <li>
-                        Integrating and analyzing experimental data to derive
-                        important physiological metrics.
-                    </li>
+<h4 style="margin-top:18px;">
+Problems Being Addressed
+</h4>
 
-                    <li>
-                        Working on research related to climate-smart breeding
-                        and stress-resilient crop production.
-                    </li>
+<p>
+Investigating complex mechanisms of concurrent soil salinity and
+waterlogging stress in wheat, focusing on physiological bottlenecks,
+stomatal conductance, ion homeostasis, oxidative stress response
+under controlled environments.
+</p>
 
-                </ul>
+<h4 style="margin-top:18px;">
+Progress & Achieved Results
+</h4>
 
-            </div>
+<p>
+Successfully integrated and analyzed experimental data points to
+derive key physiological metrics. Currently evaluating stress-tolerant
+wheat lines to map root-shoot biomass traits and physiological markers
+for climate-smart breeding.
+</p>
 
+</div>
 
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-date">
-                    Ongoing Research Projects
-                </div>
-
-                <h3>
-                    Additional Research Projects
-                </h3>
-
-                <div class="timeline-place">
-                    Sher-e-Bangla Agricultural University
-                </div>
-
-                <ul>
-
-                    <li>
-                        Application of Zeolite, Humic Acid and Fulvic Acid for
-                        improving agronomical, physiological, biochemical
-                        traits and yield of mustard under salinity stress.
-                    </li>
-
-                    <li>
-                        Response of foliar application of Nano-Urea with
-                        different levels of granular urea on growth, seed
-                        yield, oil content and quality of mustard and sunflower.
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      PUBLICATIONS
-========================================================= -->
+========================= -->
 
-<section class="publications" id="publications">
+<section id="publications">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Publications
-        </h2>
-
-        <div class="section-line"></div>
+<h2 class="section-title">Publications</h2>
+<div class="section-line"></div>
 
 
-        <div class="publication">
+<div class="publication">
 
-            <span class="publication-type">
-                Book Chapter · Elsevier · 2026
-            </span>
+<span class="publication-number">1.</span>
 
-            <h3>
-                Alleviation of multiple abiotic stresses by improving
-                macro- and micronutrient management
-            </h3>
+Hussain, M. A., Sakib, M. N., Hasanuzzaman, M., & Mühling, K. H.
+(2026). Alleviation of multiple abiotic stresses by improving
+macro- and micronutrient management. In Elsevier eBooks
+(pp. 351–363).
 
-            <p>
-                Hussain, M. A., Sakib, M. N., Hasanuzzaman, M.,
-                & Mühling, K. H.
-            </p>
+<br><br>
 
-            <p>
-                In Elsevier eBooks, pp. 351–363.
-            </p>
+<a href="https://doi.org/10.1016/b978-0-443-27424-4.00017-3"
+target="_blank">
+DOI: 10.1016/b978-0-443-27424-4.00017-3
+</a>
 
-            <a class="doi"
-               href="https://doi.org/10.1016/b978-0-443-27424-4.00017-3"
-               target="_blank">
-
-                DOI:
-                10.1016/b978-0-443-27424-4.00017-3
-                <i class="fas fa-arrow-up-right-from-square"></i>
-
-            </a>
-
-        </div>
+</div>
 
 
-        <div class="publication">
+<div class="publication">
 
-            <span class="publication-type">
-                Journal Article · 2026
-            </span>
+<span class="publication-number">2.</span>
 
-            <h3>
-                Suitability of rapeseed-mustard varieties as a relay
-                with T. aman rice
-            </h3>
+Bhuiya, A. A. F., Baque, M. A., Sakib, M. N., Islam, F., Ahmed, F.,
+Malek, M., Masum, S., & Hasanuzzaman, M. (2026). Suitability of
+rapeseed-mustard varieties as a relay with T. aman rice.
+Bangladesh Journal of Agriculture, 50(2), 69–84.
 
-            <p>
-                Bhuiya, A. A. F., Baque, M. A., Sakib, M. N.,
-                Islam, F., Ahmed, F., Malek, M., Masum, S.,
-                & Hasanuzzaman, M.
-            </p>
+<br><br>
 
-            <p>
-                Bangladesh Journal of Agriculture, 50(2), 69–84.
-            </p>
+<a href="https://doi.org/10.3329/bjagri.v50i2.86131"
+target="_blank">
+DOI: 10.3329/bjagri.v50i2.86131
+</a>
 
-            <a class="doi"
-               href="https://doi.org/10.3329/bjagri.v50i2.86131"
-               target="_blank">
-
-                DOI:
-                10.3329/bjagri.v50i2.86131
-                <i class="fas fa-arrow-up-right-from-square"></i>
-
-            </a>
-
-        </div>
+</div>
 
 
-        <div class="publication">
+<div class="publication">
 
-            <span class="publication-type">
-                Manuscript · Submitted
-            </span>
+<span class="publication-number">3.</span>
 
-            <h3>
-                Multivariate assessment of oxidative stress and growth
-                responses to combined salinity and waterlogging in wheat
-            </h3>
+Multivariate assessment of oxidative stress and growth responses
+to combined salinity and waterlogging in wheat
 
-            <p>
-                Manuscript submitted for publication.
-            </p>
+<br>
 
-        </div>
+<em>Submitted</em>
 
-    </div>
+</div>
 
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      TRAINING
-========================================================= -->
+========================= -->
 
 <section id="training">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Training & Professional Development
-        </h2>
-
-        <div class="section-line"></div>
+<h2 class="section-title">Training & Skills</h2>
+<div class="section-line"></div>
 
 
-        <div class="training-grid">
+<div class="grid-2">
+
+<div class="card">
+
+<h3>Professional Training</h3>
+
+<ul>
+
+<li>
+GlobalG.A.P Integrated Farm Assurance (IFA) course v6
+</li>
+
+<li>
+Thesis Writing, Research Design and Data Analysis
+</li>
+
+<li>
+Plant Doctor Course
+</li>
+
+<li>
+Introduction to Bioinformatics and NGS Data Analysis
+</li>
+
+<li>
+Data Analysis With R
+</li>
+
+<li>
+Fundamental Research Methodology
+</li>
+
+</ul>
+
+</div>
 
 
-            <div class="training-card">
+<div class="card">
 
-                <h3>
-                    GlobalG.A.P. Integrated Farm Assurance
-                </h3>
+<h3>Research & Technical Skills</h3>
 
-                <div class="date">
-                    October 2025
-                </div>
+<ul>
 
-                <p>
-                    IFA Course v6, Plants – Fruits & Vegetables.
-                    Covered General Regulations, Principles & Criteria,
-                    Quality Management System and Internal Audit.
-                </p>
+<li>Data Analysis by R & R Studio</li>
 
-            </div>
+<li>Scientific graphs using GraphPad Prism</li>
 
+<li>Reference management using Zotero and Mendeley</li>
 
-            <div class="training-card">
+<li>Protein Estimation</li>
 
-                <h3>
-                    Thesis Writing, Research Design & Data Analysis
-                </h3>
+<li>DNA Extraction</li>
 
-                <div class="date">
-                    21–22 November 2025
-                </div>
+<li>Peer Group Handling and Leadership</li>
 
-                <p>
-                    Training organized by Sher-e-Bangla Agricultural
-                    University Science Club covering experimental design,
-                    data analysis and thesis writing.
-                </p>
+<li>Communication Skills</li>
 
-            </div>
+</ul>
 
+</div>
 
-            <div class="training-card">
+</div>
 
-                <h3>
-                    Plant Doctor Course
-                </h3>
-
-                <div class="date">
-                    December 2024 – February 2025
-                </div>
-
-                <p>
-                    Plant health problem identification and sustainable
-                    plant health management. Final grade: 85/100.
-                </p>
-
-            </div>
-
-
-            <div class="training-card">
-
-                <h3>
-                    Introduction to Bioinformatics & NGS Data Analysis
-                </h3>
-
-                <div class="date">
-                    February 2025
-                </div>
-
-                <p>
-                    Linux, Bash, Slurm, HPC, NGS pipelines, RNA-Seq,
-                    metagenomics and variant-calling workflows.
-                </p>
-
-            </div>
-
-
-            <div class="training-card">
-
-                <h3>
-                    Data Analysis With R
-                </h3>
-
-                <div class="date">
-                    8–9 May 2026
-                </div>
-
-                <p>
-                    R programming, data handling, data cleaning, EDA,
-                    visualization, regression, hypothesis testing,
-                    report writing and data interpretation.
-                </p>
-
-            </div>
-
-
-            <div class="training-card">
-
-                <h3>
-                    Fundamental Research Methodology
-                </h3>
-
-                <div class="date">
-                    August – September 2026
-                </div>
-
-                <p>
-                    Research design, laboratory analysis, R-based data
-                    analysis, scientific writing, publication and innovation.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
-     SKILLS
-========================================================= -->
-
-<section class="skills" id="skills">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Skills
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-box">
-
-                <h3>
-                    Data & Statistics
-                </h3>
-
-                <ul>
-                    <li>R</li>
-                    <li>RStudio</li>
-                    <li>GraphPad Prism</li>
-                    <li>Data Cleaning</li>
-                    <li>Exploratory Data Analysis</li>
-                    <li>Statistical Analysis</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-box">
-
-                <h3>
-                    Research & Laboratory
-                </h3>
-
-                <ul>
-                    <li>Scientific Research</li>
-                    <li>Experimental Design</li>
-                    <li>Protein Estimation</li>
-                    <li>DNA Extraction</li>
-                    <li>Scientific Writing</li>
-                    <li>Research Data Interpretation</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-box">
-
-                <h3>
-                    Bioinformatics
-                </h3>
-
-                <ul>
-                    <li>Linux</li>
-                    <li>Bash</li>
-                    <li>Slurm</li>
-                    <li>HPC Fundamentals</li>
-                    <li>RNA-Seq Workflow</li>
-                    <li>Metagenomics</li>
-                    <li>Variant Calling</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-box">
-
-                <h3>
-                    Reference Management
-                </h3>
-
-                <ul>
-                    <li>Zotero</li>
-                    <li>Mendeley</li>
-                    <li>Literature Management</li>
-                    <li>Academic Research</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-box">
-
-                <h3>
-                    Leadership
-                </h3>
-
-                <ul>
-                    <li>Class Representative</li>
-                    <li>Peer Group Handling</li>
-                    <li>Event Management</li>
-                    <li>Communication</li>
-                    <li>Public Speaking</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-box">
-
-                <h3>
-                    Language
-                </h3>
-
-                <ul>
-                    <li>Bengali — Native</li>
-                    <li>English — IELTS Band 7</li>
-                    <li>Listening — 7.5</li>
-                    <li>Reading — 6.5</li>
-                    <li>Writing — 6.5</li>
-                    <li>Speaking — 7.0</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
-     CONFERENCES & ACTIVITIES
-========================================================= -->
-
-<section id="activities">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Conferences, Activities & Volunteering
-        </h2>
-
-        <div class="section-line"></div>
-
-
-        <div class="activity-grid">
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-users"></i>
-
-                <h3>
-                    24th Conference of Bangladesh Society of Agronomy
-                </h3>
-
-                <p>
-                    Participated at Sher-e-Bangla Agricultural University,
-                    Dhaka, on 29 November 2025.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-leaf"></i>
-
-                <h3>
-                    2nd International Conference of Weed Science Society
-                </h3>
-
-                <p>
-                    Participated at ASA University, Bangladesh,
-                    Dhaka, on 11 April 2026.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-cloud-sun"></i>
-
-                <h3>
-                    IAAS International Climate Conference 2025
-                </h3>
-
-                <p>
-                    Participated at the TSC Complex, Sher-e-Bangla
-                    Agricultural University, on 14 December 2025.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-handshake"></i>
-
-                <h3>
-                    Conference Volunteer
-                </h3>
-
-                <p>
-                    Volunteer at the 24th Conference of Bangladesh Society
-                    of Agronomy. Responsibilities included guest registration,
-                    check-in, wayfinding, room guiding, audience Q&A
-                    management and on-demand event support.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-user-tie"></i>
-
-                <h3>
-                    Class Representative
-                </h3>
-
-                <p>
-                    Served as Class Representative throughout the
-                    undergraduate degree, developing leadership,
-                    coordination and communication skills.
-                </p>
-
-            </div>
-
-
-            <div class="activity-card">
-
-                <i class="fas fa-calendar-check"></i>
-
-                <h3>
-                    Academic & Community Activities
-                </h3>
-
-                <p>
-                    Participated in academic conferences, professional
-                    development programmes, volunteer activities and
-                    student-led initiatives.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================================
+<!-- =========================
      ACHIEVEMENTS
-========================================================= -->
+========================= -->
 
-<section class="achievements" id="achievements">
+<section>
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Achievements & Awards
-        </h2>
-
-        <div class="section-line"></div>
+<h2 class="section-title">Achievements</h2>
+<div class="section-line"></div>
 
 
-        <div class="achievement-grid">
+<div class="achievement-list">
+
+<div class="achievement">
+
+<h3>Dean’s Award</h3>
+
+<p>
+Prestigious Dean’s Award for academic excellence in Bachelor
+Degree Programme.
+</p>
+
+</div>
 
 
-            <div class="achievement-card">
+<div class="achievement">
 
-                <i class="fas fa-award"></i>
+<h3>Merit Based Scholarship</h3>
 
-                <h3>
-                    Dean's Award
-                </h3>
+<p>
+Awarded 3 times with merit-based scholarship by Education Ministry
+of Bangladesh for academic excellence in board examinations.
+</p>
 
-                <p>
-                    Received the Dean's Award for academic excellence
-                    during the Bachelor Degree Programme at
-                    Sher-e-Bangla Agricultural University.
-                </p>
-
-            </div>
+</div>
 
 
-            <div class="achievement-card">
+<div class="achievement">
 
-                <i class="fas fa-medal"></i>
+<h3>IELTS</h3>
 
-                <h3>
-                    Merit-Based Scholarship
-                </h3>
+<p>
+Overall Band 7.
+Listening 7.5 | Reading 6.5 |
+Writing 6.5 | Speaking 7
+</p>
 
-                <p>
-                    Awarded merit-based scholarships by the Ministry of
-                    Education of Bangladesh for academic excellence
-                    in board examinations.
-                </p>
+</div>
 
-            </div>
+</div>
 
-
-            <div class="achievement-card">
-
-                <i class="fas fa-graduation-cap"></i>
-
-                <h3>
-                    Academic Excellence
-                </h3>
-
-                <p>
-                    Graduated in Agriculture with a CGPA of
-                    3.88/4.00 and achieved 12th position among
-                    380 students.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
+     CONFERENCES
+========================= -->
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">
+Conferences & Activities
+</h2>
+
+<div class="section-line"></div>
+
+
+<div class="conference">
+
+<h3>
+2nd International Conference of Weed Science Society of Bangladesh
+</h3>
+
+<p>
+ASA University, Bangladesh, Dhaka<br>
+11th April, 2026
+</p>
+
+</div>
+
+
+<div class="conference">
+
+<h3>
+IAAS International Climate Conference 2025
+</h3>
+
+<p>
+TSC Complex, Sher-e-Bangla Agricultural University<br>
+14th December, 2025
+</p>
+
+</div>
+
+
+<div class="conference">
+
+<h3>
+24th Conference of Bangladesh Society of Agronomy
+</h3>
+
+<p>
+TSC Complex, Sher-e-Bangla Agricultural University<br>
+29th November, 2025
+</p>
+
+</div>
+
+
+<div class="conference">
+
+<h3>
+Volunteer — 24th Conference of Bangladesh Society of Agronomy
+</h3>
+
+<p>
+Guest registration and check in, wayfinding and room guiding,
+audience Q&A management, and on-demand support.
+</p>
+
+<p>
+25 Nov – 29 Nov 2025
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- =========================
      CERTIFICATES
-========================================================= -->
+========================= -->
 
-<section class="certificates" id="certificates">
+<section>
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Certificates
-        </h2>
+<h2 class="section-title">Certificates</h2>
+<div class="section-line"></div>
 
-        <div class="section-line"></div>
+<div class="certificate-box">
 
-        <p class="section-intro">
+<h3>Certificates & Supporting Documents</h3>
 
-            Selected certificates and participation records from academic,
-            professional development, leadership, volunteer and
-            extracurricular activities.
+<p>
+View the collection of certificates and supporting documents
+included in the academic profile.
+</p>
 
-        </p>
+<a href="./certificates.pdf"
+   target="_blank">
+View Certificates PDF
+</a>
 
+</div>
 
-        <div class="certificate-list">
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        BSA Conference Participation Certificate
-                    </h4>
-
-                    <p>
-                        Bangladesh Society of Agronomy
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-shield-halved"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        Cyber Hygiene Course Certificate
-                    </h4>
-
-                    <p>
-                        Professional Development
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-user-tie"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        Effective Leadership Certificate
-                    </h4>
-
-                    <p>
-                        HP LIFE
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-cloud-sun"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        IAAS International Climate Conference
-                    </h4>
-
-                    <p>
-                        Conference Participation
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        MICS e-Learning Course
-                    </h4>
-
-                    <p>
-                        UNICEF
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-calendar-check"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        Perfect Attendance Certificate
-                    </h4>
-
-                    <p>
-                        Notre Dame College, Dhaka
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-water"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        World Water Day Certificate
-                    </h4>
-
-                    <p>
-                        Participation Certificate
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="certificate-item">
-
-                <div class="certificate-icon">
-                    <i class="fas fa-award"></i>
-                </div>
-
-                <div>
-
-                    <h4>
-                        Dean's Award Certificate
-                    </h4>
-
-                    <p>
-                        Academic Excellence · SAU
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div style="margin-top:30px;">
-
-            <a href="certificates.pdf"
-               target="_blank"
-               class="btn btn-primary">
-
-                <i class="fas fa-file-pdf"></i>
-                View Certificate PDF
-
-            </a>
-
-        </div>
-
-    </div>
-
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      CONTACT
-========================================================= -->
+========================= -->
 
-<section class="contact" id="contact">
+<section id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Contact
-        </h2>
-
-        <div class="section-line"></div>
+<h2 class="section-title">Contact & Academic Profiles</h2>
+<div class="section-line"></div>
 
 
-        <div class="contact-grid">
-
-            <div class="contact-text">
-
-                <h3 style="color:white; margin-bottom:18px;">
-                    Let's connect
-                </h3>
-
-                <p>
-                    I am interested in connecting with researchers,
-                    academics, students, agricultural professionals and
-                    organizations working in crop science, plant stress
-                    physiology, sustainable agriculture and related fields.
-                </p>
-
-                <p>
-                    For research collaboration, academic opportunities,
-                    graduate study or professional communication, please
-                    feel free to contact me.
-                </p>
-
-                <div class="social-links">
-
-                    <a href="https://www.linkedin.com/in/sakib99/"
-                       target="_blank"
-                       title="LinkedIn">
-
-                        <i class="fab fa-linkedin-in"></i>
-
-                    </a>
-
-                    <a href="https://scholar.google.com/citations?hl=en&user=ykHdpqYAAAAJ"
-                       target="_blank"
-                       title="Google Scholar">
-
-                        <i class="fas fa-graduation-cap"></i>
-
-                    </a>
-
-                    <a href="https://orcid.org/0009-0001-1700-6674"
-                       target="_blank"
-                       title="ORCID">
-
-                        <i class="fab fa-orcid"></i>
-
-                    </a>
-
-                    <a href="https://www.researchgate.net/profile/Md-Sakib-114?ev=prf_overview"
-                       target="_blank"
-                       title="ResearchGate">
-
-                        <i class="fab fa-researchgate"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
+<div class="contact-grid">
 
 
-            <div class="contact-links">
+<div class="contact-item">
 
-                <a class="contact-link"
-                   href="mailto:sakib2010667@sau.edu.bd">
+<strong>Institutional Email</strong>
 
-                    <i class="fas fa-envelope"></i>
+<a href="mailto:sakib2010667@sau.edu.bd">
+sakib2010667@sau.edu.bd
+</a>
 
-                    <span>
-                        sakib2010667@sau.edu.bd
-                    </span>
-
-                </a>
+</div>
 
 
-                <a class="contact-link"
-                   href="mailto:sakibsau2020@gmail.com">
+<div class="contact-item">
 
-                    <i class="fas fa-envelope"></i>
+<strong>Personal Email</strong>
 
-                    <span>
-                        sakibsau2020@gmail.com
-                    </span>
+<a href="mailto:sakibsau2020@gmail.com">
+sakibsau2020@gmail.com
+</a>
 
-                </a>
-
-
-                <div class="contact-link">
-
-                    <i class="fas fa-university"></i>
-
-                    <span>
-                        Sher-e-Bangla Agricultural University
-                    </span>
-
-                </div>
+</div>
 
 
-                <div class="contact-link">
+<div class="contact-item">
 
-                    <i class="fas fa-location-dot"></i>
+<strong>LinkedIn</strong>
 
-                    <span>
-                        Sher-e-Bangla Nagar, Dhaka – 1207, Bangladesh
-                    </span>
+<a href="https://www.linkedin.com/in/sakib99"
+target="_blank">
+LinkedIn Profile
+</a>
 
-                </div>
+</div>
 
-            </div>
 
-        </div>
+<div class="contact-item">
 
-    </div>
+<strong>Google Scholar</strong>
 
+<a href="https://scholar.google.com/citations?hl=en&user=ykHdpqYAAAAJ"
+target="_blank">
+Google Scholar Profile
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>ORCID</strong>
+
+<a href="https://orcid.org/0009-0001-1700-6674"
+target="_blank">
+ORCID Profile
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>ResearchGate</strong>
+
+<a href="https://www.researchgate.net/profile/Md-Sakib-114"
+target="_blank">
+ResearchGate Profile
+</a>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>Institution</strong>
+
+<p>
+Sher-e-Bangla Agricultural University
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>Location</strong>
+
+<p>
+Sher-e-Bangla Nagar, Dhaka – 1207, Bangladesh
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 </section>
 
 
-<!-- =========================================================
+<!-- =========================
      FOOTER
-========================================================= -->
+========================= -->
 
 <footer>
 
-    © 2026 Md. Nazmus Sakib.
-    Academic Research Portfolio.
+<p>
+<strong>Md. Nazmus Sakib</strong>
+</p>
+
+<p>
+Crop Stress Physiology Researcher | MSc Student in Agronomy
+</p>
+
+<p>
+Sher-e-Bangla Agricultural University
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Md. Nazmus Sakib. Academic Profile.
+</p>
 
 </footer>
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
-
-    menuBtn.addEventListener("click", function () {
-
-        navLinks.classList.toggle("active");
-
-    });
-
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-        link.addEventListener("click", function() {
-
-            navLinks.classList.remove("active");
-
-        });
-
-    });
-
-</script>
-
 
 </body>
 </html>
